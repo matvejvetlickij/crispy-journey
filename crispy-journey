@@ -1,0 +1,13 @@
+private func onTap(_ point: CGPoint,
+                       in state: AppState) -> AppState {
+        
+        let element = PointsRecognizer.findElement(
+            point,
+            in: state.collage
+        )
+        return newCollage
+    }
+    
+    private func connectControlPoints(_ ids: Set<String>,
+                                      in collage: Collage) -> Collage {
+        
